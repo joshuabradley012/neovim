@@ -1,0 +1,5 @@
+require("josh.opts")
+require("josh.lazy")
+require("josh.plugins")
+require("josh.autocmds")
+require("josh.cmds")
