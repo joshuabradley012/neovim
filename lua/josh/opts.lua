@@ -1,14 +1,5 @@
 vim.g.mapleader = " "
 
-vim.g.javascript_plugin_jsdoc = 1
-vim.g.javascript_plugin_ngdoc = 1
-vim.g.javascript_plugin_flow = 1
-vim.g.loaded_matchparen = 1
-vim.g.netrw_banner = 0
-vim.g.netrw_liststyle = 3
-
--- g.vimwiki_list = {"path": "~/notes", "template_path": "~/notes/templates", "template_ext": ".html"}
-
 vim.opt.expandtab = true
 vim.opt.ignorecase = true
 vim.opt.linebreak = true
