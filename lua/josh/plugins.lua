@@ -43,6 +43,8 @@ require("lazy").setup({
       vim.cmd "colorscheme gruvbox-material"
     end,
   },
+  -- if you're getting the error 'vscode-eslint-language-server' not found...
+  -- npm i -g vscode-langservers-extracted
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -80,15 +82,20 @@ require("lazy").setup({
     end,
   },
   {
+    "jose-elias-alvarez/null-ls.nvim",
+    config = function()
+      require("null-ls").setup()
+    end,
+  },
+  {
     "MunifTanjim/eslint.nvim",
     dependencies = {
       "neovim/nvim-lspconfig",
       "jose-elias-alvarez/null-ls.nvim",
     },
     config = function()
-  --  require("null-ls").setup()
       require("eslint").setup({
-        bin = 'eslint', -- or `eslint_d`
+        bin = 'eslint_d', -- or `eslint_d`
         code_actions = {
           enable = true,
           apply_on_save = {
