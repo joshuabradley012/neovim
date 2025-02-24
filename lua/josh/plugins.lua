@@ -71,12 +71,12 @@ require("lazy").setup({
       vim.treesitter.language.register("templ", "templ")
     end
   },
-  {
-    "github/copilot.vim",
-    build = function()
-      vim.cmd "Copilot setup"
-    end,
-  },
+  --{
+  --  "github/copilot.vim",
+  --  build = function()
+  --    vim.cmd "Copilot setup"
+  --  end,
+  --},
   {
     "sainnhe/gruvbox-material",
     init = function()
